@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eventtypes",
+      "handler": "Eventtype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventtypes/count",
+      "handler": "Eventtype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eventtypes/:id",
+      "handler": "Eventtype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/eventtypes",
+      "handler": "Eventtype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eventtypes/:id",
+      "handler": "Eventtype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eventtypes/:id",
+      "handler": "Eventtype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

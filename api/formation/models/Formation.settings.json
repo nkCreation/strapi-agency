@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "formations",
+  "info": {
+    "name": "formation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "trainers": {
+      "collection": "speaker",
+      "via": "formations",
+      "dominant": true
+    },
+    "dates": {
+      "group": "date",
+      "repeatable": true,
+      "type": "group"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Duration": {
+      "type": "decimal"
+    },
+    "Certifying": {
+      "type": "boolean"
+    },
+    "Official": {
+      "type": "boolean"
+    },
+    "Exclusivity": {
+      "type": "boolean"
+    },
+    "technos": {
+      "collection": "techno",
+      "via": "formations",
+      "dominant": true
+    }
+  }
+}

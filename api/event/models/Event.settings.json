@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "events",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Begin": {
+      "type": "date"
+    },
+    "End": {
+      "type": "date"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Entity": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "speakers": {
+      "collection": "speaker",
+      "via": "events",
+      "dominant": true
+    },
+    "eventtype": {
+      "model": "eventtype",
+      "via": "events"
+    }
+  }
+}

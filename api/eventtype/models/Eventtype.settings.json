@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "eventtypes",
+  "info": {
+    "name": "eventtype",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "events": {
+      "collection": "event",
+      "via": "eventtype"
+    }
+  }
+}

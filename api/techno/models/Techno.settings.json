@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "technos",
+  "info": {
+    "name": "techno",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "formations": {
+      "collection": "formation",
+      "via": "technos"
+    }
+  }
+}

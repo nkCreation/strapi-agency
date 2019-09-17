@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "employees",
+  "info": {
+    "name": "speaker",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "Zenika": {
+      "type": "boolean"
+    },
+    "events": {
+      "collection": "event",
+      "via": "speakers"
+    },
+    "formations": {
+      "collection": "formation",
+      "via": "trainers"
+    }
+  }
+}

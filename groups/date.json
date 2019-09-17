@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "Date",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_dates",
+  "attributes": {
+    "date": {
+      "type": "date"
+    }
+  }
+}

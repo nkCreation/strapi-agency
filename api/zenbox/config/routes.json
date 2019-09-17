@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zenboxes",
+      "handler": "Zenbox.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zenboxes/count",
+      "handler": "Zenbox.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zenboxes/:id",
+      "handler": "Zenbox.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zenboxes",
+      "handler": "Zenbox.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zenboxes/:id",
+      "handler": "Zenbox.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zenboxes/:id",
+      "handler": "Zenbox.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
